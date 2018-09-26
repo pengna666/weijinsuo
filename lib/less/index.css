@@ -1,0 +1,50 @@
+/*头部区域*/
+*{
+    margin: 0;
+    padding:0;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.topbar {
+    border-bottom: 1px solid #ccc;
+    /*height: 40px;  */
+    /*写死了高度，导致子元素超出父元素后，下面的盒子按照父元素的高度排列的，所以会被子元素阻隔，导致不正常显示*/
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.topbar .row > div {
+    border-right: 1px solid #ccc;
+}
+
+.topbar .row > div:last-child {
+    border-right: none;
+}
+
+.topbar .row > div span {
+    color: #666;
+}
+
+
+/*#feature .row>div {
+    position: relative;
+    padding-left: 20px;
+}
+
+#feature .row>div i {
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    color: #666;
+}*/
